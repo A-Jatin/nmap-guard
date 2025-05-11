@@ -1,0 +1,65 @@
+NMAP-Based Network Security Scanning Challenge
+
+Problem Statement
+Design a scalable, enterprise-grade network scanning and vulnerability assessment system that leverages NMAP to continuously monitor, detect, and report potential security vulnerabilities across a global corporate network infrastructure.
+Background
+
+CrowdStrike's Enterprise Security team needs to enhance their network visibility and vulnerability detection capabilities. As organizations expand their digital footprint, maintaining comprehensive network security posture becomes increasingly challenging. Attackers often exploit unpatched vulnerabilities, misconfigured services, or unsecured network segments to gain initial access.
+Your task is to design an automated, scalable system that can:
+●	Perform intelligent network discovery across diverse corporate environments
+●	Conduct targeted vulnerability scans without impacting business operations
+●	Generate actionable intelligence for security teams
+●	Integrate with existing security infrastructure
+
+Functional Requirements
+1.	Network Discovery System: Design a component that can intelligently discover and map network assets across multiple geographic locations without causing operational disruptions
+2.	Scan Orchestration: Create a system that intelligently schedules and executes various types of NMAP scans (basic port scans, service detection, OS fingerprinting, etc.) based on network segment sensitivity and operational hours
+3.	Vulnerability Assessment: Process NMAP scan results to identify potential vulnerabilities, misconfigurations, and security gaps
+4.	Reporting and Alerting: Generate comprehensive reports showing network topology, open ports, running services, and potential vulnerabilities with appropriate severity ratings
+5.	Historical Analysis: Store and analyze scan results over time to identify trends, newly appeared services, and changes in network configuration
+6.	API Integration: Provide APIs for integration with other security tools (SIEM, EDR, ticketing systems)
+
+Non-Functional Requirements
+1.	Scale: System must support scanning of 100,000+ hosts across 500+ networks globally
+2.	Performance: Minimize network impact through intelligent scan distribution and rate limiting
+3.	Reliability: Ensure 99.9% availability of the scanning infrastructure
+4.	Security: Implement proper access controls and encryption for scan results and network data
+5.	Compliance: Support various compliance frameworks (PCI-DSS, HIPAA, etc.) by providing appropriate evidence of network security posture
+
+Technical Constraints
+1.	The system should leverage NMAP as the primary scanning engine but may incorporate additional tools as needed
+2.	Scanning activities must not disrupt business operations or trigger security alerts in monitored environments
+3.	The solution must work across diverse network environments (on-premises, cloud, hybrid)
+4.	The design should accommodate networks with varying security policies and access restrictions
+
+Deliverables
+Please provide:
+1.	Architecture Diagram: High-level system design showing key components and data flows
+2.	Component Design: Detailed design of major system components:
+●	Scan orchestration and scheduling
+●	Result processing and analysis
+●	Reporting and alerting
+●	Data storage and retention
+3.	Scaling Strategy: How the system scales to handle thousands of networks and millions of hosts
+4.	Operational Considerations:
+●	How to manage scan credentials securely
+●	How to handle network segmentation and access restrictions
+●	How to minimize false positives and scan impact
+5.	Integration Approach: Methods for integrating with existing security tools and processes
+
+Evaluation Criteria
+Your design will be evaluated on:
+1.	Technical feasibility: Is the solution practical and implementable?
+2.	Scalability: Can it effectively handle enterprise-scale networks?
+3.	Security considerations: Does it address security concerns related to network scanning?
+4.	Business impact awareness: Does the design minimize disruption to business operations?
+5.	Architecture clarity: Is the proposed solution clearly communicated and well-structured?
+
+Additional Considerations for Discussion
+●	How would the system handle network segments with strict access controls or air-gapped environments?
+●	What strategies would you employ to reduce false positives in vulnerability assessments?
+●	How would you balance scanning frequency with network performance impact?
+●	What approach would you take to handle ephemeral assets (such as cloud instances that may appear and disappear)?
+●	How would the system handle IPv6 networks alongside traditional IPv4 infrastructure?
+●	What methods would you use to verify vulnerabilities without exploiting them?
+
