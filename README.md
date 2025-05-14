@@ -13,6 +13,18 @@ NMAP-Guard is an enterprise-grade network scanning and vulnerability assessment 
 - Secure credential management
 - Scheduled scanning capabilities
 
+## Architecture
+
+### Component Diagram
+This diagram shows the internal component structure of NMAP-Guard, illustrating how different modules interact with each other:
+
+![Component Diagram](docs/images/Nmap%20Guard%20-%20Component%20Diagram.drawio.png)
+
+### System Architecture
+This diagram presents the high-level architectural view of NMAP-Guard, showing the main system components and their relationships:
+
+![Architectural Diagram](docs/images/Nmap%20Guard%20-%20Architectural%20Diagram.drawio.png)
+
 ## Prerequisites
 
 - Python 3.8 or higher
